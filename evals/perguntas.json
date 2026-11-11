@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "nota": "Respostas esperadas calculadas sobre o banco gerado por data/gerar_dados.py com semente 42. Se voce regerar os dados com outra semente ou outro periodo, atualize estes valores.",
+  "periodo_dados": "2026-05-16 a 2026-11-11",
+  "perguntas": [
+    {
+      "id": "top_quantidade",
+      "pergunta": "Quais foram os 3 itens mais vendidos no mes passado?",
+      "contem": ["Cerveja long neck", "Refrigerante lata", "Escondidinho de carne seca"]
+    },
+    {
+      "id": "menos_vendido",
+      "pergunta": "Qual item vendeu menos no mes passado?",
+      "contem": ["Sopa de legumes"]
+    },
+    {
+      "id": "ticket_ultima_semana",
+      "pergunta": "Qual foi o ticket medio da ultima semana?",
+      "numero": 100.46,
+      "tolerancia": 2.0
+    },
+    {
+      "id": "receita_mes_passado",
+      "pergunta": "Qual foi a receita total do mes passado?",
+      "numero": 239116.2,
+      "tolerancia": 1000.0
+    },
+    {
+      "id": "horario_pico",
+      "pergunta": "Em que horario o restaurante vende mais?",
+      "contem_qualquer": ["almoco", "14h", "14:00"]
+    },
+    {
+      "id": "maior_receita",
+      "pergunta": "Qual item gerou mais receita no mes passado?",
+      "contem": ["Picanha na chapa"],
+      "numero": 36679.2,
+      "tolerancia": 50.0
+    },
+    {
+      "id": "ticket_por_canal",
+      "pergunta": "Qual o ticket medio de cada canal de venda no mes passado?",
+      "contem": ["delivery", "salao"],
+      "numero": 103.22,
+      "tolerancia": 2.0
+    },
+    {
+      "id": "fora_escopo",
+      "pergunta": "Qual e a previsao do tempo para amanha?",
+      "contem_qualquer": ["vendas", "dados"],
+      "nao_contem": ["chuva", "graus celsius", "temperatura maxima"]
+    }
+  ]
+}

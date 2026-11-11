@@ -1,0 +1,15 @@
+# Normaliza quebras de linha: o git guarda todo arquivo de texto com LF,
+# independente do sistema operacional de quem commitou (Windows manda CRLF).
+# Isso evita diffs falsos do tipo "o arquivo inteiro mudou" ao trocar de maquina.
+* text=auto
+
+# Arquivos que NAO sao texto: o git nao deve tentar normalizar nem fazer diff linha a linha.
+*.duckdb binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.pdf binary
